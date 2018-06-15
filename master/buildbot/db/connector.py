@@ -68,7 +68,7 @@ class DBConnector(WorkerAPICompatMixin, service.ReconfigurableServiceMixin,
 
     # Period, in seconds, of the cleanup task.  This master will perform
     # periodic cleanup actions on this schedule.
-    CLEANUP_PERIOD = 3600
+    CLEANUP_PERIOD = 7200
 
     def __init__(self, basedir):
         service.AsyncMultiService.__init__(self)
